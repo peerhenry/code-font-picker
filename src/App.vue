@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -10,7 +10,7 @@
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -25,5 +25,20 @@
       color: #42b983;
     }
   }
+}
+
+@font-face {
+  font-family: 'firacode';
+  src: url('./assets/fonts/FiraCode-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'yellowtail';
+  src: url('./assets/fonts/Yellowtail-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'monoid';
+  src: url('./assets/fonts/Monoid-Regular.ttf') format('truetype');
 }
 </style>

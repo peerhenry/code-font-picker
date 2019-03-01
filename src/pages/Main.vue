@@ -1,42 +1,31 @@
 <template>
   <div class="container">
-    <div class="row">
-      <select>
-        <option value>Monospace</option>
-        <option value>Consolas</option>
-        <option value>Firebase</option>
-      </select>
-    </div>
-    <Snippet class="snippet" :font="font"/>
+    <FontPickSnippet class="leftside" />
+    <FontPickSnippet class="rightside" />
   </div>
 </template>
 
 <script>
-import Snippet from "@/components/Snippet.vue";
+import FontPickSnippet from '@/components/FontPickSnippet.vue'
 
 export default {
-  components: { Snippet },
-  data() {
-    return {
-      codeExample: txt
-    };
-  }
-};
+  components: { FontPickSnippet }
+}
 </script>
 
 <style lang="scss">
 .container {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-columns: 10vw 38vw 4vw 38vw 10vw;
 }
 
-.row {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.snippet {
+.leftside {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.rightside {
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 </style>
